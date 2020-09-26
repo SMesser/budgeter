@@ -16,8 +16,20 @@ This "Budgeter" tool creates multiple groups of expenses & income based on the s
 
 * Particular line items may count as being only partially in a group. If I assume about half my credit card expenses (which aren't broken down further) are actually optional, I can thus make a "tight budget" estimate which assumes my credit card expenses are cut in half while other groupings (medical, housing, utilities) are kept at full.
 
+# Dependencies
+
+Python 3.8.0
+openpyxl==3.0.2
+
 # USAGE
 
 * Build an Excel file which resembles "sample_excel.xlsx."
 * Rename "sample_config.py" and modify its contents to reflect your desired groupings, plus some details of your Excel file's set up.
 * Run `python Budgeter.py` from the command line.
+
+# TODO
+
+* Add an output chart / charts using plotly
+* Distinguish between last-year and lifetime records. Currently all statistics reference lifetime behavior.
+* Reconcile sample_finances.xlsx with sample_config.py, and/or improve handling of empty / near-empty Groupings.
+* Add sample output.

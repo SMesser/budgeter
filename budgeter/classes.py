@@ -21,11 +21,13 @@ class Config(object):
         self.known_groups = known_groups
 
 class Partial(object):
+    """Describe an entry that should only partially toward its parent Grouping."""
     def __init__(self, name, portion=1.0):
         self.label = name
         self.portion = portion
 
 class Grouping(object):
+    """Describe a collection of categorically-similar transaction records."""
     def __init__(self, name, *labels):
         self.name = name
         self.labels = {}
@@ -90,12 +92,6 @@ class Grouping(object):
                 self.last_date = date
             if date < self.first_date:
                 self.first_date = date        
-
-    def total(self):
-        tot_spent = 0.0
-        for record in self.records:
-            tot_spent += record.amount
-        return tot_spent
 
 
 class Record(object):
