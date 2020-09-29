@@ -1,0 +1,133 @@
+Workbook opened: ./sample_finances.xlsx
+Reading Sheet: <Worksheet "Checking">
+Book closed.
+Unknown labels:
+['ATM w/drawal',
+ 'ATM withdrawal - Chevy Chase',
+ 'American Mutual Fund Autodebit',
+ 'Auto Insurance',
+ 'Auto Transfer to Money Market Savings',
+ 'Auto Xfer to Mutual Fund',
+ 'Auto maintenance',
+ 'CarMax Auto Finance',
+ 'Church donation',
+ 'Cleaning paycheck',
+ 'Doctor',
+ 'Entergy',
+ 'Estimated Tax Payment',
+ 'Exelon Gas',
+ 'MD Estimated Tax',
+ 'Massage & V',
+ 'Massage N V',
+ 'Paycheck ',
+ 'Paystub',
+ 'Perkins Electric - grounding estimate',
+ 'Sprint',
+ 'Sprint (incl. overdue payment)',
+ 'Verizon Autodebit',
+ 'Visa card',
+ 'Visa points reimbursement',
+ 'Washington Gas',
+ 'Wire Transfer fee',
+ 'first AWS check']
+banking fees & cash flow:
+	Range: 11/24/2007 - 07/30/2020
+	Net: -19605.00,	-1545.93/year
+	Income: 450.00,	35.48/year
+	Outgo: 20055.00,	1581.41/year
+	Flux: 20505.00,	1616.89/year
+car purchase & maintenance:
+	Range: 11/11/2012 - 02/07/2019
+	Net: -3698.67,	-592.78/year
+	Income: 0.00,	0.00/year
+	Outgo: 3698.67,	592.78/year
+	Flux: 3698.67,	592.78/year
+charity & gifts:
+	No matching records.
+credit card:
+	No matching records.
+education:
+	No matching records.
+gas:
+	No matching records.
+high life:
+	Range: 05/22/2006 - 07/30/2020
+	Net: -25965.08,	-1829.78/year
+	Income: 450.00,	31.71/year
+	Outgo: 26415.08,	1861.49/year
+	Flux: 26865.08,	1893.20/year
+housing rent & mortgage:
+	Range: 05/22/2006 - 11/29/2009
+	Net: -5596.00,	-1588.14/year
+	Income: 0.00,	0.00/year
+	Outgo: 5596.00,	1588.14/year
+	Flux: 5596.00,	1588.14/year
+salary & other forms of direct income:
+	Range: 04/06/2006 - 10/06/2010
+	Net: 12.14,	2.70/year
+	Income: 12.14,	2.70/year
+	Outgo: 0.00,	0.00/year
+	Flux: 12.14,	2.70/year
+loans:
+	Range: 11/29/2009 - 04/17/2015
+	Net: -1489.06,	-276.78/year
+	Income: 110.94,	20.62/year
+	Outgo: 1600.00,	297.40/year
+	Flux: 1710.94,	318.03/year
+low life:
+	Range: 05/22/2006 - 07/30/2020
+	Net: -25965.08,	-1829.78/year
+	Income: 450.00,	31.71/year
+	Outgo: 26415.08,	1861.49/year
+	Flux: 26865.08,	1893.20/year
+optional:
+	No matching records.
+home maintenance & improvement:
+	No matching records.
+my marriage:
+	No matching records.
+medical:
+	Range: 08/18/2011 - 03/01/2016
+	Net: -76.76,	-16.92/year
+	Income: 0.00,	0.00/year
+	Outgo: 76.76,	16.92/year
+	Flux: 76.76,	16.92/year
+mixed usage:
+	Range: 02/16/2010 - 11/22/2013
+	Net: -200.00,	-53.13/year
+	Income: 0.00,	0.00/year
+	Outgo: 200.00,	53.13/year
+	Flux: 200.00,	53.13/year
+power:
+	Range: 08/12/2013 - 08/12/2013
+	Per-Year calculations unavailable for single-date groups.
+	Net: -79.46
+	Income: 0.00
+	Outgo: 79.46
+	Flux: 79.46
+professional:
+	No matching records.
+required:
+	Range: 05/22/2006 - 07/30/2020
+	Net: -25765.08,	-1815.69/year
+	Income: 450.00,	31.71/year
+	Outgo: 26215.08,	1847.40/year
+	Flux: 26665.08,	1879.11/year
+savings:
+	No matching records.
+tax:
+	No matching records.
+communication:
+	Range: 07/15/2006 - 06/03/2019
+	Net: -484.62,	-37.61/year
+	Income: 0.00,	0.00/year
+	Outgo: 484.62,	37.61/year
+	Flux: 484.62,	37.61/year
+water:
+	No matching records.
+utility:
+	Range: 07/15/2006 - 06/03/2019
+	Net: -564.08,	-43.78/year
+	Income: 0.00,	0.00/year
+	Outgo: 564.08,	43.78/year
+	Flux: 564.08,	43.78/year

@@ -33,17 +33,28 @@ def report_groups(known_groups):
     '''Output results to terminal'''
     for group in known_groups:
         print(group.name + ':')
-        first = group.first_date
-        last = group.last_date
-        print('\tRange: {} - {}'.format(
-            first.strftime('%m/%d/%Y'),
-            last.strftime('%m/%d/%Y')
-        ))
-        years = (last - first).days/365.25
-        print('\tNet: {:.2f},\t{:.2f}/year'.format(group.net, group.net/years))
-        print('\tIncome: {:.2f},\t{:.2f}/year'.format(
-            group.income,
-            group.income/years
-        ))
-        print('\tOutgo: {:.2f},\t{:.2f}/year'.format(group.outgo, group.outgo/years))
-        print('\tFlux: {:.2f},\t{:.2f}/year'.format(group.flux, group.flux/years))
+        if len(group.records) == 0:
+            print('\tNo matching records.')
+        else:
+            first = group.first_date
+            last = group.last_date
+            print('\tRange: {} - {}'.format(
+                first.strftime('%m/%d/%Y'),
+                last.strftime('%m/%d/%Y')
+            ))
+            years = (last - first).days/365.25
+            if years > 0:
+                print('\tNet: {:.2f},\t{:.2f}/year'.format(group.net, group.net/years))
+                print('\tIncome: {:.2f},\t{:.2f}/year'.format(
+                    group.income,
+                    group.income/years
+                ))
+                print('\tOutgo: {:.2f},\t{:.2f}/year'.format(group.outgo, group.outgo/years))
+                print('\tFlux: {:.2f},\t{:.2f}/year'.format(group.flux, group.flux/years))
+            else:
+                print('\tPer-Year calculations unavailable for single-date groups.')
+                print('\tNet: {:.2f}'.format(group.net))
+                print('\tIncome: {:.2f}'.format(group.income))
+                print('\tOutgo: {:.2f}'.format(group.outgo))
+                print('\tFlux: {:.2f}'.format(group.flux))
+
