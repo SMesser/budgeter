@@ -18,7 +18,9 @@ BANKING = Grouping(
     'banking fees & cash flow', # First string in each Grouping is its name.
     # All subsequent strings, Partials, and Groupings are members.
     # Use a simple string to match all entries with that subject.
+    # Note that these strings ARE case-sensitive.
     'fee for ATM withdrawal',
+    'ATM w/drawal',
     # Use a Partial instance when you want only some of the associated expenses
     # to count toward the collection.
     Partial('Credit card paid online, including late fees', 0.1),
@@ -28,13 +30,16 @@ BANKING = Grouping(
     'Check printing charge',
     'Check Reorder',
 )
+# This format of Grouping declaration also works, and may be more readable
 CAR = Grouping(
     'car purchase & maintenance',
-    'Car downpayment',
-    'Car payment',
-    'Mechanic',
-    'Auto insurance premium',
-    'Car rental',
+    *[
+        'Car downpayment',
+        'Car payment',
+        'Mechanic',
+        'Auto insurance premium',
+        'Car rental',
+    ]
 )
 CHARITY = Grouping(
     'charity & gifts',
@@ -102,21 +107,17 @@ MAINTENANCE = Grouping(
 )
 MEDICAL = Grouping(
     'medical',
-    'Advanced Medical Care / GP Dr. Ajmal',
-    'Adventist Health Care (ER 8/16)',
+    'Advanced Medical Care / GP Dr. A',
+    'Adventist Health Care',
     'Dentist copay',
     'dentist - fillings',
     'Escrow Interest',
     'Mortgage',
     'Mortgage Application fee',
-    'Bank of America / Mortgage',
-    'Bank of America Escrow Reimburse',
-    'Bank of America – Mortgage',
-    'Community Radiology Associates / throat X-rays',
     'Dentist',
     'Doctor A',
     'Dr. D',
-    'ER (Medical Emergency Professionals)',
+    'ER',
     'Chiropractor',
     'X-rays',
     'HSA Autodebit',
@@ -186,9 +187,10 @@ OPTIONAL = Grouping(
     'dresser',
     CHARITY,
     EDUCATION,
-    MARRIAGE,
     PROFESSIONAL
 )
+
+# I use this LOW_LIFE to estimate what a tight budget looks like.
 LOW_LIFE = Grouping(
     'low life',
     # Other groupings can also be used in a Partial instance.
@@ -196,6 +198,8 @@ LOW_LIFE = Grouping(
     Partial(MIXED, 0.5),
     REQUIRED
 )
+
+# I use this HIGH_LIFE Grouping to estimate a comfortable budget.
 HIGH_LIFE = Grouping('high life', CREDIT_CARD, OPTIONAL, MIXED, REQUIRED)
 
 
@@ -203,7 +207,7 @@ HIGH_LIFE = Grouping('high life', CREDIT_CARD, OPTIONAL, MIXED, REQUIRED)
 KNOWN_GROUPS = [
     BANKING, CAR, CHARITY, CREDIT_CARD, EDUCATION, GAS, HIGH_LIFE, HOUSING,
     INCOME, LOANS, LOW_LIFE,
-    OPTIONAL, MAINTENANCE, MARRIAGE, MEDICAL,
+    OPTIONAL, MAINTENANCE, MEDICAL,
     MIXED, POWER, PROFESSIONAL, REQUIRED, SAVINGS, TAX,
     TELECOM, WATER, UTILITY
 ]

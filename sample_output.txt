@@ -2,132 +2,192 @@ Workbook opened: ./sample_finances.xlsx
 Reading Sheet: <Worksheet "Checking">
 Book closed.
 Unknown labels:
-['ATM w/drawal',
- 'ATM withdrawal - Chevy Chase',
- 'American Mutual Fund Autodebit',
+['Auto Finance',
  'Auto Insurance',
  'Auto Transfer to Money Market Savings',
  'Auto Xfer to Mutual Fund',
  'Auto maintenance',
- 'CarMax Auto Finance',
+ 'Cell phone',
  'Church donation',
  'Cleaning paycheck',
  'Doctor',
- 'Entergy',
  'Estimated Tax Payment',
  'Exelon Gas',
+ 'Gas bill',
+ 'Landline',
+ 'Landline automatic payment',
  'MD Estimated Tax',
  'Massage & V',
  'Massage N V',
  'Paycheck ',
  'Paystub',
  'Perkins Electric - grounding estimate',
- 'Sprint',
- 'Sprint (incl. overdue payment)',
- 'Verizon Autodebit',
  'Visa card',
  'Visa points reimbursement',
- 'Washington Gas',
  'Wire Transfer fee',
+ 'cell phone (incl. overdue payment)',
  'first AWS check']
 banking fees & cash flow:
-	Range: 11/24/2007 - 07/30/2020
-	Net: -19605.00,	-1545.93/year
-	Income: 450.00,	35.48/year
-	Outgo: 20055.00,	1581.41/year
-	Flux: 20505.00,	1616.89/year
+	Range: 10/16/2006 - 07/30/2020
+	Net: -19705.00,	-1429.16/year
+	Income: 450.00,	32.64/year
+	Outgo: 20155.00,	1461.80/year
+	Flux: 20605.00,	1494.44/year
+  banking fees & cash flow for past year:
+	Range: 07/30/2020 - 07/30/2020
+	Per-Year calculations unavailable for single-date groups.
+	Net: 450.00
+	Income: 450.00
+	Outgo: 0.00
+	Flux: 450.00
 car purchase & maintenance:
 	Range: 11/11/2012 - 02/07/2019
-	Net: -3698.67,	-592.78/year
+	Net: -3898.67,	-624.83/year
 	Income: 0.00,	0.00/year
-	Outgo: 3698.67,	592.78/year
-	Flux: 3698.67,	592.78/year
+	Outgo: 3898.67,	624.83/year
+	Flux: 3898.67,	624.83/year
+  car purchase & maintenance for past year:
+	No matching records.
 charity & gifts:
+	No matching records.
+  charity & gifts for past year:
 	No matching records.
 credit card:
 	No matching records.
+  credit card for past year:
+	No matching records.
 education:
+	No matching records.
+  education for past year:
 	No matching records.
 gas:
 	No matching records.
+  gas for past year:
+	No matching records.
 high life:
 	Range: 05/22/2006 - 07/30/2020
-	Net: -25965.08,	-1829.78/year
+	Net: -26177.89,	-1844.78/year
 	Income: 450.00,	31.71/year
-	Outgo: 26415.08,	1861.49/year
-	Flux: 26865.08,	1893.20/year
+	Outgo: 26627.89,	1876.49/year
+	Flux: 27077.89,	1908.20/year
+  high life for past year:
+	Range: 07/30/2020 - 07/30/2020
+	Per-Year calculations unavailable for single-date groups.
+	Net: 450.00
+	Income: 450.00
+	Outgo: 0.00
+	Flux: 450.00
 housing rent & mortgage:
 	Range: 05/22/2006 - 11/29/2009
 	Net: -5596.00,	-1588.14/year
 	Income: 0.00,	0.00/year
 	Outgo: 5596.00,	1588.14/year
 	Flux: 5596.00,	1588.14/year
+  housing rent & mortgage for past year:
+	No matching records.
 salary & other forms of direct income:
 	Range: 04/06/2006 - 10/06/2010
 	Net: 12.14,	2.70/year
 	Income: 12.14,	2.70/year
 	Outgo: 0.00,	0.00/year
 	Flux: 12.14,	2.70/year
+  salary & other forms of direct income for past year:
+	No matching records.
 loans:
 	Range: 11/29/2009 - 04/17/2015
 	Net: -1489.06,	-276.78/year
 	Income: 110.94,	20.62/year
 	Outgo: 1600.00,	297.40/year
 	Flux: 1710.94,	318.03/year
+  loans for past year:
+	No matching records.
 low life:
 	Range: 05/22/2006 - 07/30/2020
-	Net: -25965.08,	-1829.78/year
+	Net: -26177.89,	-1844.78/year
 	Income: 450.00,	31.71/year
-	Outgo: 26415.08,	1861.49/year
-	Flux: 26865.08,	1893.20/year
+	Outgo: 26627.89,	1876.49/year
+	Flux: 27077.89,	1908.20/year
+  low life for past year:
+	Range: 07/30/2020 - 07/30/2020
+	Per-Year calculations unavailable for single-date groups.
+	Net: 450.00
+	Income: 450.00
+	Outgo: 0.00
+	Flux: 450.00
 optional:
+	No matching records.
+  optional for past year:
 	No matching records.
 home maintenance & improvement:
 	No matching records.
-my marriage:
+  home maintenance & improvement for past year:
 	No matching records.
 medical:
-	Range: 08/18/2011 - 03/01/2016
-	Net: -76.76,	-16.92/year
+	Range: 07/13/2008 - 03/01/2016
+	Net: -21676.76,	-2839.83/year
 	Income: 0.00,	0.00/year
-	Outgo: 76.76,	16.92/year
-	Flux: 76.76,	16.92/year
+	Outgo: 21676.76,	2839.83/year
+	Flux: 21676.76,	2839.83/year
+  medical for past year:
+	No matching records.
 mixed usage:
 	Range: 02/16/2010 - 11/22/2013
-	Net: -200.00,	-53.13/year
+	Net: -300.00,	-79.69/year
 	Income: 0.00,	0.00/year
-	Outgo: 200.00,	53.13/year
-	Flux: 200.00,	53.13/year
+	Outgo: 300.00,	79.69/year
+	Flux: 300.00,	79.69/year
+  mixed usage for past year:
+	No matching records.
 power:
-	Range: 08/12/2013 - 08/12/2013
-	Per-Year calculations unavailable for single-date groups.
-	Net: -79.46
-	Income: 0.00
-	Outgo: 79.46
-	Flux: 79.46
+	Range: 12/11/2010 - 08/12/2013
+	Net: -175.15,	-65.61/year
+	Income: 0.00,	0.00/year
+	Outgo: 175.15,	65.61/year
+	Flux: 175.15,	65.61/year
+  power for past year:
+	No matching records.
 professional:
+	No matching records.
+  professional for past year:
 	No matching records.
 required:
 	Range: 05/22/2006 - 07/30/2020
-	Net: -25765.08,	-1815.69/year
+	Net: -25877.89,	-1823.63/year
 	Income: 450.00,	31.71/year
-	Outgo: 26215.08,	1847.40/year
-	Flux: 26665.08,	1879.11/year
+	Outgo: 26327.89,	1855.35/year
+	Flux: 26777.89,	1887.06/year
+  required for past year:
+	Range: 07/30/2020 - 07/30/2020
+	Per-Year calculations unavailable for single-date groups.
+	Net: 450.00
+	Income: 450.00
+	Outgo: 0.00
+	Flux: 450.00
 savings:
+	No matching records.
+  savings for past year:
 	No matching records.
 tax:
 	No matching records.
+  tax for past year:
+	No matching records.
 communication:
-	Range: 07/15/2006 - 06/03/2019
-	Net: -484.62,	-37.61/year
+	Range: 08/13/2006 - 06/03/2019
+	Net: -401.74,	-31.37/year
 	Income: 0.00,	0.00/year
-	Outgo: 484.62,	37.61/year
-	Flux: 484.62,	37.61/year
+	Outgo: 401.74,	31.37/year
+	Flux: 401.74,	31.37/year
+  communication for past year:
+	No matching records.
 water:
 	No matching records.
+  water for past year:
+	No matching records.
 utility:
-	Range: 07/15/2006 - 06/03/2019
-	Net: -564.08,	-43.78/year
+	Range: 08/13/2006 - 06/03/2019
+	Net: -576.89,	-45.05/year
 	Income: 0.00,	0.00/year
-	Outgo: 564.08,	43.78/year
-	Flux: 564.08,	43.78/year
+	Outgo: 576.89,	45.05/year
+	Flux: 576.89,	45.05/year
+  utility for past year:
+	No matching records.

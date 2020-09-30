@@ -79,28 +79,30 @@ class Grouping(object):
             return False
 
     def _process_record(self, record):
-            self.records.append(record)
-            amount = record.amount
-            self.net += amount
-            self.flux += abs(amount)
-            if amount > 0:
-                self.income += amount
-            else:
-                self.outgo += -amount
-            date = record.date()
-            if date > self.last_date:
-                self.last_date = date
-            if date < self.first_date:
-                self.first_date = date        
+        self.records.append(record)
+        amount = record.amount
+        self.net += amount
+        self.flux += abs(amount)
+        if amount > 0:
+            self.income += amount
+        else:
+            self.outgo += -amount
+        date = record.date
+        if date > self.last_date:
+            self.last_date = date
+        if date < self.first_date:
+           self.first_date = date        
 
 
 class Record(object):
+    """Encapsulate a single transaction within a Grouping."""
     def __init__(self, date, amount):
         self.date = date
         self.amount = amount
 
 
 class Row(object):
+    """Logical transaction from an Excel file, with columns as attributes."""
     def __init__(self, row_num, sheet, config):
         self.row_num = row_num
         self.date = self.read_date(
@@ -127,17 +129,20 @@ class Row(object):
         return sheet.cell(row=row, column=self.col_num(col)).value
 
     def read_date(self, sheet, row, col):
+        """Read the date from the Excel Row and store it on this object."""
         raw = self._read(sheet=sheet, row=row, col=col)
         if raw is None:
             return None
         else:
-            return raw.date
+            return raw.date()
 
     def col_num(self, raw):
+        """Convert column letter to equivalent number."""
         if isinstance(raw, int):
             return raw
         elif isinstance(raw, str):
             return ord(raw[0]) - ord('A') + 1
 
     def is_empty(self):
+        """Returns True iff the subject entry is None or an empty string."""
         return (self.subject == "") or (self.subject is None)

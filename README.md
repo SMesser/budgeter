@@ -31,5 +31,6 @@ openpyxl==3.0.2
 
 * Add an output chart / charts using plotly
 * Distinguish between last-year and lifetime records. Currently all statistics reference lifetime behavior.
-* Reconcile sample_finances.xlsx with sample_config.py, and/or improve handling of empty / near-empty Groupings.
-* Add sample output.
+* Reconcile sample_finances.xlsx with sample_config.py
+* Produce pandas DataFrame version of output.
+* Add unit tests.
