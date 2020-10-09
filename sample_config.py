@@ -1,6 +1,11 @@
 '''This file describes how your transactions should be read & categorized.'''
 from budgeter.classes import Grouping, Partial
 
+DEBUG = False
+
+# Set the output directory
+OUTPUT_DIR = "./output/"
+
 # Describe the structure of the Excel file recording 
 START_ROW = 5
 SHEET_NAME = "Checking"

@@ -1,6 +1,9 @@
 '''This module is reserved for general utility classes.'''
 
 from datetime import datetime
+from logging import getLogger
+
+logger = getLogger(__name__)
 
 class Config(object):
     ''' Stores broad configuration data.'''
@@ -70,7 +73,7 @@ class Grouping(object):
                 date = row.date
                 net = row.net
             except ValueError as e:
-                print('Failure to read row {}'.format(row))
+                logger.exception('Failure to read row {}'.format(row))
                 raise
             new_record = Record(date, net)
             self._process_record(new_record)

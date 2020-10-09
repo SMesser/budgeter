@@ -4,7 +4,7 @@ This package is a tool I used to help me with my household budgeting.
 
 For several years, I've maintained an Excel file showing the transactions in my checking and savings accounts. I built this tool as a way to mine that data for information about my personal expenses and income.
 
-While it shows every check or money transfer I've had over the years, it does not group those items on its own. In addition, it has single line items for expenses that could be considered in under multiple headings. The item names are also _ad_ _hoc_, and include items I didn't anticipate when I first created the file.
+While it shows every check or money transfer I've had over the years, it does not group those items on its own. In addition, it has single line items for expenses that could be considered under multiple headings. The item names are also _ad_ _hoc_, and include items I didn't anticipate when I first created the file.
 
 This "Budgeter" tool creates multiple groups of expenses & income based on the subject / name of each transaction. It then calculates the "income," "outgo," "net" (income - outgo) and "flux" (income + outgo) associated with each group. Each group is shown with its range of dates. The income, outgo, net and flux numbers for each are presented both as aggregate amounts and as rates (e.g. dollars per year).
 
@@ -20,6 +20,8 @@ This "Budgeter" tool creates multiple groups of expenses & income based on the s
 
 Python 3.8.0
 openpyxl==3.0.2
+pandas==1.1.3 (might not be needed)
+plotly==4.11.0
 
 # USAGE
 
@@ -29,8 +31,7 @@ openpyxl==3.0.2
 
 # TODO
 
-* Add an output chart / charts using plotly
-* Distinguish between last-year and lifetime records. Currently all statistics reference lifetime behavior.
+* Add an output chart / charts using plotly.
 * Reconcile sample_finances.xlsx with sample_config.py
 * Produce pandas DataFrame version of output.
 * Add unit tests.
