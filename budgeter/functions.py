@@ -97,7 +97,7 @@ def report_groups(known_groups):
     output_string = ''
     for group in known_groups:
         logger.info('Evaluating ' + group.name)
-        output_string += group.name + ':\n' + report_single_group(group) + '\n'
+        output_string += '{}:\n{}'.format(group.name, report_single_group(group))
         output_string += '  {} for past year:\n'.format(group.name)
         today = datetime.now().date()
         try:
@@ -109,5 +109,5 @@ def report_groups(known_groups):
             group,
             first=last_year,
             last=today
-        ))
+        )) + '\n'
     return output_string

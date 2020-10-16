@@ -22,7 +22,8 @@ logger.setLevel(logging.DEBUG)
 terminal_log = logging.StreamHandler()
 # Overwrite the output.txt file for each run
 log_file = logging.FileHandler(OUTPUT_DIR + 'log.txt', mode='w')
-formatter = logging.Formatter('%(message)s')
+file_formatter = logging.Formatter('%(asctime)s \t %(levelname)s \t %(message)s')
+terminal_formatter = logging.Formatter('%(levelname)s \t %(message)s')
 
 if DEBUG:
     terminal_log.setLevel(logging.DEBUG)
@@ -31,8 +32,8 @@ else:
     terminal_log.setLevel(logging.INFO)
     log_file.setLevel(logging.INFO)
 
-terminal_log.setFormatter(formatter)
-log_file.setFormatter(formatter)
+terminal_log.setFormatter(terminal_formatter)
+log_file.setFormatter(file_formatter)
 logger.addHandler(terminal_log)
 logger.addHandler(log_file)
 
