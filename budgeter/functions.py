@@ -53,55 +53,61 @@ def restrict_group_to_date_range(group, first, last):
 def report_single_group(group):
     """Describe a group of transactions and their stats."""
     if len(group.records) == 0:
-        logger.warning('\tNo matching records for group {}.'.format(group.name))
+        msg = 'No matching records for group "{}".'.format(group.name)
+        logger.warning(msg)
+        return '\t {}\n'.format(msg)
     else:
+        output_string = ''
         first = group.first_date
         last = group.last_date
-        logger.info('\tRange: {} - {}'.format(
+        output_string += '\tRange: {} - {}\n'.format(
             first.strftime('%m/%d/%Y'),
             last.strftime('%m/%d/%Y')
-        ))
+        )
         years = (last - first).days/365.25
         if years > 0:
-            logger.info('\tNet: {:.2f},\t{:.2f}/year'.format(
+            output_string += '\tNet: {:.2f},\t{:.2f}/year\n'.format(
                 group.net,
                 group.net/years
-            ))
-            logger.info('\tIncome: {:.2f},\t{:.2f}/year'.format(
+            )
+            output_string += '\tIncome: {:.2f},\t{:.2f}/year\n'.format(
                 group.income,
                 group.income/years
-            ))
-            logger.info('\tOutgo: {:.2f},\t{:.2f}/year'.format(
+            )
+            output_string += '\tOutgo: {:.2f},\t{:.2f}/year\n'.format(
                 group.outgo,
                 group.outgo/years
-            ))
-            logger.info('\tFlux: {:.2f},\t{:.2f}/year'.format(
+            )
+            output_string += '\tFlux: {:.2f},\t{:.2f}/year\n'.format(
                 group.flux,
                 group.flux/years
-            ))
-        else:
-            logger.warning(
-                '\tPer-Year calculations unavailable for single-date group {}.'.format(group.name)
             )
-            logger.info('\tNet: {:.2f}'.format(group.net))
-            logger.info('\tIncome: {:.2f}'.format(group.income))
-            logger.info('\tOutgo: {:.2f}'.format(group.outgo))
-            logger.info('\tFlux: {:.2f}'.format(group.flux))
+        else:
+            msg = 'Per-Year calculations unavailable for single-date group "{}".'.format(group.name)
+            logger.warning(msg)
+            output_string += '\t{}\n'.format(msg)
+            output_string += '\tNet: {:.2f}\n'.format(group.net)
+            output_string += '\tIncome: {:.2f}\n'.format(group.income)
+            output_string += '\tOutgo: {:.2f}\n'.format(group.outgo)
+            output_string += '\tFlux: {:.2f}\n'.format(group.flux)
+        return output_string
 
 def report_groups(known_groups):
     '''Output results to terminal'''
+    output_string = ''
     for group in known_groups:
-        logger.info(group.name + ':')
-        report_single_group(group)
-        logger.info('  {} for past year:'.format(group.name))
+        logger.info('Evaluating ' + group.name)
+        output_string += group.name + ':\n' + report_single_group(group) + '\n'
+        output_string += '  {} for past year:\n'.format(group.name)
         today = datetime.now().date()
         try:
             last_year = date(today.year - 1, today.month, today.day)
         except ValueError:
             # Most likely, today is Feb 29 and last year was not a leap year
             last_year = date(today.year - 1, today.month, today.day-1)
-        report_single_group(restrict_group_to_date_range(
+        output_string += report_single_group(restrict_group_to_date_range(
             group,
             first=last_year,
             last=today
         ))
+    return output_string

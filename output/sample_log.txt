@@ -1,0 +1,85 @@
+Workbook opened: ./sample_finances.xlsx
+Reading Sheet: <Worksheet "Checking">
+Book closed.
+Unknown labels:
+['Auto Finance',
+ 'Auto Insurance',
+ 'Auto Transfer to Money Market Savings',
+ 'Auto Xfer to Mutual Fund',
+ 'Auto maintenance',
+ 'Cell phone',
+ 'Church donation',
+ 'Cleaning paycheck',
+ 'Doctor',
+ 'Estimated Tax Payment',
+ 'Exelon Gas',
+ 'Gas bill',
+ 'Landline',
+ 'Landline automatic payment',
+ 'MD Estimated Tax',
+ 'Massage & V',
+ 'Massage N V',
+ 'Paycheck ',
+ 'Paystub',
+ 'Perkins Electric - grounding estimate',
+ 'Visa card',
+ 'Visa points reimbursement',
+ 'Wire Transfer fee',
+ 'cell phone (incl. overdue payment)',
+ 'first AWS check']
+Evaluating banking fees & cash flow
+Per-Year calculations unavailable for single-date group "banking fees & cash flow between 2019-10-16 and 2020-10-16".
+Evaluating car purchase & maintenance
+No matching records for group "car purchase & maintenance between 2019-10-16 and 2020-10-16".
+Evaluating charity & gifts
+No matching records for group "charity & gifts".
+No matching records for group "charity & gifts between 2019-10-16 and 2020-10-16".
+Evaluating credit card
+No matching records for group "credit card".
+No matching records for group "credit card between 2019-10-16 and 2020-10-16".
+Evaluating education
+No matching records for group "education".
+No matching records for group "education between 2019-10-16 and 2020-10-16".
+Evaluating gas
+No matching records for group "gas".
+No matching records for group "gas between 2019-10-16 and 2020-10-16".
+Evaluating high life
+Per-Year calculations unavailable for single-date group "high life between 2019-10-16 and 2020-10-16".
+Evaluating housing rent & mortgage
+No matching records for group "housing rent & mortgage between 2019-10-16 and 2020-10-16".
+Evaluating salary & other forms of direct income
+No matching records for group "salary & other forms of direct income between 2019-10-16 and 2020-10-16".
+Evaluating loans
+No matching records for group "loans between 2019-10-16 and 2020-10-16".
+Evaluating low life
+Per-Year calculations unavailable for single-date group "low life between 2019-10-16 and 2020-10-16".
+Evaluating optional
+No matching records for group "optional".
+No matching records for group "optional between 2019-10-16 and 2020-10-16".
+Evaluating home maintenance & improvement
+No matching records for group "home maintenance & improvement".
+No matching records for group "home maintenance & improvement between 2019-10-16 and 2020-10-16".
+Evaluating medical
+No matching records for group "medical between 2019-10-16 and 2020-10-16".
+Evaluating mixed usage
+No matching records for group "mixed usage between 2019-10-16 and 2020-10-16".
+Evaluating power
+No matching records for group "power between 2019-10-16 and 2020-10-16".
+Evaluating professional
+No matching records for group "professional".
+No matching records for group "professional between 2019-10-16 and 2020-10-16".
+Evaluating required
+Per-Year calculations unavailable for single-date group "required between 2019-10-16 and 2020-10-16".
+Evaluating savings
+No matching records for group "savings".
+No matching records for group "savings between 2019-10-16 and 2020-10-16".
+Evaluating tax
+No matching records for group "tax".
+No matching records for group "tax between 2019-10-16 and 2020-10-16".
+Evaluating communication
+No matching records for group "communication between 2019-10-16 and 2020-10-16".
+Evaluating water
+No matching records for group "water".
+No matching records for group "water between 2019-10-16 and 2020-10-16".
+Evaluating utility
+No matching records for group "utility between 2019-10-16 and 2020-10-16".

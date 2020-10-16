@@ -19,8 +19,11 @@ This "Budgeter" tool creates multiple groups of expenses & income based on the s
 # Dependencies
 
 Python 3.8.0
+
 openpyxl==3.0.2
+
 pandas==1.1.3 (might not be needed)
+
 plotly==4.11.0
 
 # USAGE

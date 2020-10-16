@@ -21,20 +21,20 @@ logger = logging.getLogger('')
 logger.setLevel(logging.DEBUG)
 terminal_log = logging.StreamHandler()
 # Overwrite the output.txt file for each run
-file_output = logging.FileHandler(OUTPUT_DIR + 'output.txt', mode='w')
+log_file = logging.FileHandler(OUTPUT_DIR + 'log.txt', mode='w')
 formatter = logging.Formatter('%(message)s')
 
 if DEBUG:
     terminal_log.setLevel(logging.DEBUG)
-    file_output.setLevel(logging.DEBUG)
+    log_file.setLevel(logging.DEBUG)
 else:
     terminal_log.setLevel(logging.INFO)
-    file_output.setLevel(logging.INFO)
+    log_file.setLevel(logging.INFO)
 
 terminal_log.setFormatter(formatter)
-file_output.setFormatter(formatter)
+log_file.setFormatter(formatter)
 logger.addHandler(terminal_log)
-logger.addHandler(file_output)
+logger.addHandler(log_file)
 
 UNKNOWN = Grouping('unknown')
 CONFIG = Config(
@@ -61,4 +61,6 @@ if len(UNKNOWN.labels) > 0:
     logger.info('Unknown labels:')
     logger.info(pformat(sorted(UNKNOWN.labels.keys())))
 
-report_groups(CONFIG.known_groups)
+output_string = report_groups(CONFIG.known_groups)
+with open(OUTPUT_DIR + 'output.txt', 'w') as f:
+    f.write(output_string)

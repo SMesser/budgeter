@@ -24,7 +24,7 @@ class Config(object):
         self.known_groups = known_groups
 
 class Partial(object):
-    """Describe an entry that should only partially toward its parent Grouping."""
+    """Describe entry that partially contributes toward its parent Grouping."""
     def __init__(self, name, portion=1.0):
         self.label = name
         self.portion = portion
